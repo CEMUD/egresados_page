@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+    color: #333;
+}
+
+header {
+    background-color: #E63946;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.intro {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.info {
+    background-color: #F4A261;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2em;
+    color: #FFF;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFF;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #E63946;
+}
+
+footer {
+    background-color: #264653;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Triángulos decorativos */
+header::after, footer::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+header::after {
+    top: 0;
+    right: 0;
+    border-width: 0 100px 100px 0;
+    border-color: transparent #F4A261 transparent transparent;
+}
+
+footer::before {
+    bottom: 0;
+    left: 0;
+    border-width: 100px 0 0 100px;
+    border-color: transparent transparent #E63946 transparent;
+}
