@@ -13,18 +13,20 @@ header {
     text-align: center;
     padding: 20px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo {
     width: 100px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    margin-bottom: 10px; /* Aumenta el espacio entre el logo y el título */
 }
 
 h1 {
     margin: 0;
     font-size: 2.5em;
+    text-align: center;
 }
 
 .intro {
@@ -97,4 +99,30 @@ footer::before {
     left: 0;
     border-width: 100px 0 0 100px;
     border-color: transparent transparent #E63946 transparent;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px; /* Reducir el tamaño del logo en móviles */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Reducir el tamaño del título */
+    }
+
+    .cards {
+        flex-direction: column; /* Alinear las tarjetas en columna en pantallas pequeñas */
+    }
+
+    .card {
+        flex-basis: 100%; /* Hacer que las tarjetas ocupen todo el ancho */
+        margin: 10px 0;
+    }
 }
