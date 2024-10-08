@@ -3,100 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información para Egresados</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>CEMUD | Comunidad de Egresados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .carousel {
+            scroll-snap-type: x mandatory;
+        }
+        .carousel-item {
+            scroll-snap-align: start;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <img src="logo.png" alt="Logo de la Universidad Distrital" class="logo">
-        <h1>Egresados de Matemáticas</h1>
+<body class="bg-gray-100">
+    <header class="bg-blue-900 text-white p-4 flex items-center justify-between">
+        <img src="main-logo.png" alt="Logo de la Universidad Distrital" class="h-12">
+        <h1 class="text-xl">CEMUD - Integrando oporunidades</h1>
     </header>
-
-    <section class="intro">
-        <p>Bienvenidos a la página de información para los egresados de la carrera de matemáticas de la Universidad Distrital. Aquí encontrarás oportunidades académicas y laborales actuales.</p>
-    </section>
-
-    <!-- Sección de Oportunidades Académicas -->
-    <section class="info">
-        <h2>Oportunidades de Posgrados</h2>
-        <div class="cards">
-
-            <!-- Procesos de admisión en Brasil -->
-            <div class="card">
-                <h3>Universidades en Brasil con procesos próximos a iniciar o en curso</h3>
-                <ul>
-                    <li><a href="https://posmat.ufabc.edu.br/br/" target="_blank">UFABC - Matemática</a></li>
-                    <li><a href="https://www.est.ufmg.br/portal/pos-graduacao-processo-seletivo/" target="_blank">UFMG - Estatística</a></li>
-                    <li><a href="https://www.ime.unicamp.br/pos-graduacao/matematica/admissao" target="_blank">UNICAMP - Matemática</a></li>
-                    <li><a href="https://www.ime.usp.br/pos-matematica/ingresso/" target="_blank">USP - Matemática</a></li>
-                </ul>
-            </div>
-
-            <!-- Prueba Extra Muros -->
-            <div class="card">
-                <h3>Prueba Extra Muros</h3>
-                <p><a href="http://www.provaextramuros.org.br/index.php/pt/" target="_blank">Link a la prueba Extra Muros</a></p>
-            </div>
-
-            <!-- Oportunidades en Francia -->
-            <div class="card">
-                <h3>Oportunidades en Francia</h3>
-                <ul>
-                    <li><strong>Research Chairs of Excellence:</strong> del 1 de octubre al 29 de noviembre de 2024<br>
-                        <a href="https://sciencesmaths-paris.fr/en/nos-programmes-en/les-chaires-fsmp" target="_blank">Descripción de la oferta</a>
-                    </li>
-                    <li><strong>FSMP Postdoctoral Program:</strong> del 1 de octubre al 29 de noviembre de 2024<br>
-                        <a href="https://www.sciencesmaths-paris.fr/en/postdoc-fsmp" target="_blank">Descripción de la oferta</a>
-                    </li>
-                    <li><strong>MathPhDInFrance (Doctoral Program):</strong> del 17 de diciembre de 2024 al 14 de febrero de 2025<br>
-                        <a href="https://mathphdinfrance.fr/" target="_blank">Descripción de la oferta</a>
-                    </li>
-                    <li><strong>Paris Graduate School for Mathematical Sciences (Master Scholarships):</strong> 
-                        <ul>
-                            <li>Primer llamado (internacional): del 4 de noviembre de 2024 al 6 de febrero de 2025</li>
-                            <li>Segundo llamado (red FSMP): del 3 de marzo al 5 de mayo de 2025</li>
-                        </ul>
-                        <a href="https://sciencesmaths-paris.fr/en/pgsm-master" target="_blank">Descripción de la oferta</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Universidad de Talca -->
-            <div class="card">
-                <h3>Admisiones abiertas en la Universidad de Talca</h3>
-                <p>Las admisiones a los programas de posgrado en la Universidad de Talca están abiertas. En particular, para la Maestría en Matemáticas Puras, que ofrece una beca de <strong>350,000 pesos chilenos netos mensuales</strong> (aproximadamente 350 dólares americanos).</p>
-                <p>La universidad cuenta con investigadores de primer nivel, ideal para quienes deseen desarrollar una carrera académica. Sin embargo, es importante señalar que el programa requiere <strong>dedicación exclusiva</strong> debido a la exigencia de los cursos.</p>
-                <p>Para más información, visita el siguiente enlace:<br>
-                <a href="http://inst-mat.utalca.cl/html/index.php/magister/postulacion-y-admision" target="_blank">Postulación y admisión - Universidad de Talca</a></p>
-            </div>
-
-            <!-- Formulario de registro a la comunidad -->
-            <div class="card">
-                <h3>Formulario de Registro a la Comunidad</h3>
-                <p>El formulario de registro a la comunidad de egresados está disponible hasta el próximo domingo.</p>
-                <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScMhJJh58gJN7GFbD2EjcDmgoaKSJHiqDgIbbFMQMw1Hk9kNg/viewform?usp=sf_link" target="_blank">Haz clic aquí para registrarte</a></p>
-            </div>
+    <section class="intro bg-cover bg-center bg-gray-900 text-white min-h-screen flex items-center justify-center" style="background-image: url('https://www.clarkson.edu/sites/default/files/2023-06/Mathematics-Hero-1600x900.jpg');">
+        <div class="bg-black bg-opacity-50 py-12 px-6 rounded-lg max-w-4xl text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-wide">¡Bienvenidos Egresados y comunidad Matemática!</h1>
+            <p class="text-xl md:text-2xl font-light">Esta página está dedicada a mostrar información para los egresados de la carrera de matemáticas de la Universidad Distrital.</p>
+            <p class="text-lg md:text-xl mt-4">Aquí encontrarás oportunidades académicas y laborales actuales.</p>
+            <a href="#oportunidades" class="mt-8 inline-block px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300 ease-in-out">Explora las oportunidades</a>
         </div>
     </section>
-
-    <!-- Nueva sección de Trabajo e Industria -->
-    <section class="info">
-        <h2>Trabajo e Industria</h2>
-        <div class="cards">
-            <!-- Convención Colombia 4.0 -->
-            <div class="card">
-                <h3>Convención Colombia 4.0</h3>
-                <p>El 30/31 de Octubre será la convención de Colombia 4.0, un evento de tecnología organizado por el MinTIC.</p>
-                <p><strong>¡Es gratis!</strong> Si están interesados, pueden registrarse en el siguiente enlace:</p>
-                <p><a href="https://registro.col40.co/" target="_blank">Registro para Colombia 4.0</a></p>
-                <p>¡Allá nos vemos!</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Universidad Distrital - Facultad de Matemáticas</p>
-    </footer>
     
+    <section id="oportunidades" class="info p-6">
+        <h2 class="text-3xl font-extrabold mb-8 text-center text-gray-800">Oportunidades de Posgrados</h2>
+    
+        <!-- Carrusel -->
+        <div class="relative">
+            <!-- Contenedor del carrusel -->
+            <div class="carousel flex overflow-x-auto gap-6 transition-all duration-700 ease-in-out">
+                <!-- Diapositiva 1 -->
+                <div class="carousel-item flex-shrink-0 w-full md:w-1/3 bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <div class="max-w-full w-full bg-white rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg w-full h-48 object-cover" src="https://conexao.ufrj.br/wp-content/uploads/2019/10/predios-centro-ufrj-4040-palacio_universitario-1.jpg" alt=""/>
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">Oportunidades en Brasil</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Estas son algunas ofertas académicas próximas a iniciar o en curso</p>
+                            <div class="flex flex-col space-y-4">
+                                <a href="https://posmat.ufabc.edu.br/br/" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    UFABC - Matemática
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.est.ufmg.br/portal/pos-graduacao-processo-seletivo/" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    UFMG - Estatística
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.ime.unicamp.br/pos-graduacao/matematica/admissao" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    UNICAMP - Matemática
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.ime.usp.br/pos-matematica/ingresso/" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    USP - Matemática
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diapositiva 2 -->
+                <div class="carousel-item flex-shrink-0 w-full md:w-1/3 bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <div class="max-w-full w-full bg-white rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg w-full h-48 object-cover" src="https://cdn-blog.superprof.com/blog_mx/wp-content/uploads/2020/01/estudiantes-internacionales.png" alt=""/>
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">Oportunidades en Francia</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Estas son algunas ofertas académicas disponibles en territorio frances.</p>
+                            <div class="flex flex-col space-y-4">
+                                <a href="https://sciencesmaths-paris.fr/en/nos-programmes-en/les-chaires-fsmp" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    FSMP: Research Chairs of Excellence
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.est.ufmg.br/portal/pos-graduacao-processo-seletivo/" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    FSMP: Postdoctoral Program
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                                <a href="https://mathphdinfrance.fr/" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    MathPhDInFrance (Doctoral Program)
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                                <a href="https://sciencesmaths-paris.fr/en/pgsm-master" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    FSMP: Master Scholarships
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diapositiva 3 -->
+                <div class="carousel-item flex-shrink-0 w-full md:w-1/3 bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <div class="max-w-full w-full bg-white rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg w-full h-48 object-cover" src="https://www.icesi.edu.co/relaciones-internacionales/images/relaciones_internacionales/convenios/fotos-universidades/Universidad_de_Chile.jpg" alt=""/>
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">Oportunidades en Chile</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Énterate de la oferta académica de las universidades chilenas</p>
+                            <div class="flex flex-col space-y-4">
+                                <a href="http://inst-mat.utalca.cl/html/index.php/magister/postulacion-y-admision" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Universidad de Tulca - Maestría
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diapositiva 5 -->
+                <div class="carousel-item flex-shrink-0 w-full md:w-1/3 bg-white p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <div class="max-w-full w-full bg-white rounded-lg shadow">
+                        <a href="#">
+                            <img class="rounded-t-lg w-full h-48 object-cover" src="https://www.provaextramuros.org.br/sys/img/Extramuros.png" alt=""/>
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">Prueba Extra Muros</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">Posiciones post-doctorales en la Fundación de ciencias matemáticas de Paris. Del 1 de octubre al 29 de noviembre de 2024</p>
+                            <div class="flex flex-col space-y-4">
+                                <a href="https://www.provaextramuros.org.br/index.php/pt/" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Ver más
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Botones de navegación del carrusel -->
+            <button id="prevBtn" type="button" class="absolute top-1/2 left-4 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full shadow-lg focus:outline-none">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="nextBtn" type="button" class="absolute top-1/2 right-4 transform -translate-y-1/2 z-30 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full shadow-lg focus:outline-none">
+                <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    
+    <!-- Sección de Trabajo e Industria -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-extrabold mb-8 text-center text-gray-800">Ofertas laborales e Industria</h2>
+            <div class="w-200 bg-white rounded-lg shadow">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-48 object-cover" src="https://col40.co/750/articles-383570_foto_marquesina.png" alt=""/>
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-center text-gray-900">Convención Colombia 4.0</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center">El 30/31 de Octubre será la convención de Colombia 4.0, un evento de tecnología organizado por el MinTIC.</p>
+                    <div class="flex flex-col space-y-4">
+                        <a href="https://posmat.ufabc.edu.br/br/" target="_blank" class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Regístrate
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-extrabold mb-8 text-center text-gray-800">Comunidad CEMU</h2>
+
+
+            <div class="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                <h5 class="mb-2 text-3xl font-bold text-gray-900">¡Únete a nuestra comunidad!</h5>
+                <p class="mb-5 text-base text-gray-500 sm:text-lg">Regístrate en el formulario que encontrarás abajo y mantente al tanto de las últimas actualizaciones acerca de CEMUD y la información compartida por los egresados</p>
+                <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScMhJJh58gJN7GFbD2EjcDmgoaKSJHiqDgIbbFMQMw1Hk9kNg/viewform" target="_blank" class="w-full bg-blue-700 sm:w-auto focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
+                        <div class="text-left rtl:text-right">
+                            <div class="mb-1 text-xs">Formulario de registro</div>
+                            <div class="-mt-1 font-sans text-sm font-semibold">Google Docs</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+    </section>
+
+
+    <footer class="bg-gray-900 text-white text-center p-4">
+        <p>CEMUD - Integrando Oportunidades. 2024</p>
+    </footer>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let scrollAmount = 0;
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
